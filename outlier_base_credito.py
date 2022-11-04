@@ -38,7 +38,7 @@ def outlier_base_credito(base_credit):
 
      #Grafco Income x loan 
      grafico =px.scatter(base_credit, x="age", y="loan")
-     grafico.write_image("outlier_base_credit_income_vs_loan.png")
+     grafico.write_image("outlier_base_credit_age_vs_loan.png")
      
      detector =KNN()
      detector.fit(base_credit.iloc[:,1:4])
